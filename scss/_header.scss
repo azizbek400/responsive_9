@@ -1,0 +1,77 @@
+.header {
+    padding: 20px 0px;
+    background-color: #fff
+}
+.header__container {
+   @include flexB;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 360px;
+}
+
+.header__logo {
+    color: #828282;
+    width: 116px;
+height: 48px;
+}
+
+.header__link {
+    color: #282B22;
+font-size: 16px;
+font-weight: 500;
+line-height: 100%;
+}
+
+.header__login {
+    width: 98px;
+    border-radius: 10px;
+background: #828282;
+color: #FFF;
+font-size: 13px;
+font-weight: 600;
+padding: 15px 0px;
+
+&::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 7px;
+    background-repeat: no-repeat;
+    background-image: url('../img/phone.png');
+}
+}
+
+.header__nav {
+    display: flex;
+    gap: 40px;
+}
+
+.header__menu {
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-image: url('../img/menu.svg');
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    display: none;
+    }
+
+@media screen and (max-width: 1200px) {
+    .header__nav {
+        display: none;
+    }
+    .header__menu {
+        display: block;
+    }
+    
+}
+
+
+// 780

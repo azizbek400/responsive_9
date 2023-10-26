@@ -1,0 +1,22 @@
+@mixin mainTitle {
+    color: #96d41a;
+    text-align: center;
+font-size: 46px;
+font-weight: 600;
+text-transform: uppercase;
+
+
+@media screen and (max-width: 640px) {
+    font-size: 36px;
+}
+
+@media screen and (max-width: 576px) {
+    font-size: 24px;
+}
+}
+
+@mixin flexB {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
